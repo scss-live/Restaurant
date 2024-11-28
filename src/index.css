@@ -1,0 +1,155 @@
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: helvetica, arial, sans-serif;
+  background-color: #2e2e31;
+}
+
+
+
+.banner {
+  height: 80vh;
+  /* background-color: blue; */
+  background-image: url(https://img.freepik.com/premium-photo/fried-slices-pleurotus-eryngii-mushrooms-with-balsamic-sauce_164638-17261.jpg?w=1380);
+  display: flex;
+  justify-content: start; align-items: center;
+  padding-left :16%;
+  background-size: 110% 110%;
+background-position: center center;
+animation: shrink 8s infinite alternate;
+
+
+}
+.second-banner {
+  background-image: url(https://img.freepik.com/free-photo/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai_188544-13382.jpg);
+}
+.banner .content {
+  width: 50%;
+  background: #000000d7;
+}
+@media (max-width:768px) {
+.banner{
+  padding: 0 5% ;
+  height: 50vh;
+}
+.banner .content {
+  width: 100%;
+  background: #000000d7;
+}
+.banner-heading  {
+  height: 150px !important;
+}
+.banner-heading  h1 {
+  font-size: 1.5rem !important;
+  letter-spacing: 1px !important;
+}
+}
+
+@keyframes shrink {
+0% {
+  background-size: 80% 80%;
+}
+100% {
+  background-size: 110% 110%;
+}
+}
+.service {
+  margin-top: -8%;
+}
+
+
+
+@keyframes tipsy {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+
+.banner-heading {
+  position: relative;
+  height: 250px;
+}
+.banner-heading h1 {
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  padding: 20px;
+  top: 50%;
+  left: 0%;
+  transform: translateX(-0%) translateY(-50%);
+}
+
+.banner-heading h1:before,
+.banner-heading h1:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 15px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 8s infinite alternate ease-in-out tipsy;
+}
+
+.banner-heading h1:before {
+  border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.banner-heading h1:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+.small-about {
+  position: absolute;
+  width: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(80%, 80%);
+}
+
+.ddd{
+  position: absolute;
+  top: 0;
+  right: 10%;
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+}
+
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 32%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 30%;
+  }
+}
+.footer {
+  background-image: url(./../public/footer.svg);
+}

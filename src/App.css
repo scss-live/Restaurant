@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.banner {
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?q=80&w=2070') center/cover no-repeat;
+}
+
+.banner-heading {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.banner-heading h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.banner-heading .lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.content {
+  padding-top: 80px;
+}
+
+.service img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Menu Styles */
+.menu-tab {
+  border: none !important;
+}
+
+.menu-tab .nav-link {
+  color: white !important;
+  border: none !important;
+  padding: 1rem 2rem;
+}
+
+.menu-tab .nav-link.active {
+  background-color: #343a40 !important;
+  border-bottom: 3px solid #fff !important;
+}
+
+/* Cart Styles */
+.cart-item img {
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+  background-color: #343a40;
+  border: 1px solid #495057;
+  color: white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: #343a40;
+  border-color: #6c757d;
+  color: white;
+  box-shadow: none;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
+}
+
+/* Video Section */
+.video-section {
+  background-color: #1a1a1a;
+  padding: 80px 0;
+}
+
+.video-container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-container h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-heading h1 {
+    font-size: 2.5rem;
+  }
+  
+  .banner-heading .lead {
+    font-size: 1.2rem;
+  }
+  
+  .service img {
+    height: 200px;
+  }
+}
